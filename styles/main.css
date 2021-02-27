@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    margin: 0;
+}
+
+.company {
+    border: 3px solid rgb(140,140,140);
+}
