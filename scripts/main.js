@@ -1,4 +1,6 @@
 console.log("main is loaded")
-import { BusinessList } from "./BusinessList";
+import { BusinessList1, BusinessList2, BusinessList3 } from "./BusinessList.js";
 
-BusinessList();
+BusinessList1();
+BusinessList2();
+BusinessList3();

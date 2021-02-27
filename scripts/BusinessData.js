@@ -112,3 +112,14 @@ const businesses = [
 ];
 
 export const getBusinesses = () => businesses;
+export const getNewYorkBusinesses = () => newYorkBusinesses;
+export const getManufacturingBusinesses = () => manufacturingBusinesses;
+
+// export const newYorkBusinesses = businesses.filter(businessObject => {
+//     if (businessObject.addressStateCode === "NY") {
+//         return true;
+//     }
+//     return false;
+// })
+const newYorkBusinesses = businesses.filter(business => (business.addressStateCode === 'NY'));
+const manufacturingBusinesses = businesses.filter(business => (business.companyIndustry === 'Manufacturing'));
