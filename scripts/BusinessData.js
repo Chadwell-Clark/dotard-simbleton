@@ -110,10 +110,15 @@ const businesses = [
         addressCity: "Watrous"
     }
 ];
+const newYorkBusinesses = businesses.filter(business => (business.addressStateCode === 'NY'));
+const manufacturingBusinesses = businesses.filter(business => (business.companyIndustry === 'Manufacturing'));
+// const purchasingAgents = businesses.map(business => business.purchasingAgent);
 
 export const getBusinesses = () => businesses;
 export const getNewYorkBusinesses = () => newYorkBusinesses;
 export const getManufacturingBusinesses = () => manufacturingBusinesses;
+// export const getPurchasingAgents = () => purchasingAgents;
+
 
 // export const newYorkBusinesses = businesses.filter(businessObject => {
 //     if (businessObject.addressStateCode === "NY") {
@@ -121,5 +126,3 @@ export const getManufacturingBusinesses = () => manufacturingBusinesses;
 //     }
 //     return false;
 // })
-const newYorkBusinesses = businesses.filter(business => (business.addressStateCode === 'NY'));
-const manufacturingBusinesses = businesses.filter(business => (business.companyIndustry === 'Manufacturing'));
