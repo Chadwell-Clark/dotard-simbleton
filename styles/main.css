@@ -2,6 +2,16 @@
     box-sizing: border-box;
     margin:0;
     margin: 0;
+    border: 1px black solid;
+}
+.header__title {
+    text-align: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+
 }
 .active-Businesses {
     margin:1rem;
