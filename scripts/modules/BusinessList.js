@@ -1,4 +1,4 @@
-import { getBusinesses, getNewYorkBusinesses, getManufacturingBusinesses } from "./BusinessData.js";
+import { getBusinesses, getNewYorkBusinesses, getManufacturingBusinesses, getPurchasingAgents } from "./BusinessData.js";
 import { Company } from "./Business.js";
 import { PurchasingAgent } from "./PurchasingAgent.js";
 
@@ -37,7 +37,7 @@ export const BusinessList3 = () => {
 // };
 
 export const PurchasingAgentList = () => {
-    const companyArray = getBusinesses();
+    const companyArray = getPurchasingAgents();
     const DOMTarget = document.querySelector(".agents");
     companyArray.forEach((company) => {
         DOMTarget.innerHTML += PurchasingAgent(company)

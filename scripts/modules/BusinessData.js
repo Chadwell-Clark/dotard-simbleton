@@ -112,17 +112,21 @@ const businesses = [
 ];
 const newYorkBusinesses = businesses.filter(business => (business.addressStateCode === 'NY'));
 const manufacturingBusinesses = businesses.filter(business => (business.companyIndustry === 'Manufacturing'));
-// const purchasingAgents = businesses.map(business => business.purchasingAgent);
+const purchasingAgents = businesses.map(business => {
+   
+    const container = {};
+    container[business.fullName] = `${business.purchasingAgent.nameFirst} ${business.purchasingAgent.nameLast}`
+    container[business.company] =`${business.companyName}`
+    container[business.phoneNumber] = `${business.phoneWork}`;
+    // business.fullName = `${business.purchasingAgent.nameFirst} ${business.purchasingAgent.nameLast}`,
+    // business.company =`${business.companyName}`,
+    // business.phoneNumber = `${business.phoneWork}`);
+    return container;
+});
 
 export const getBusinesses = () => businesses;
 export const getNewYorkBusinesses = () => newYorkBusinesses;
 export const getManufacturingBusinesses = () => manufacturingBusinesses;
-// export const getPurchasingAgents = () => purchasingAgents;
+export const getPurchasingAgents = () => purchasingAgents;
 
 
-// export const newYorkBusinesses = businesses.filter(businessObject => {
-//     if (businessObject.addressStateCode === "NY") {
-//         return true;
-//     }
-//     return false;
-// })
