@@ -40,10 +40,11 @@ h2 {
 }
 .find {
     padding: .4rem;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     line-height: 2rem;
     background: rgb(241, 224, 177);
     border-radius: 10px;
+    font-size: 1.2rem;
 }
 .active-Businesses {
     margin:1rem;
